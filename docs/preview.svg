@@ -1,0 +1,265 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 540" width="1200" height="540">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#090D16"/>
+      <stop offset="50%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#1E1B4B"/>
+    </linearGradient>
+    <linearGradient id="brand" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#6366F1"/>
+      <stop offset="100%" stop-color="#A855F7"/>
+    </linearGradient>
+    <linearGradient id="bar1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#A5B4FC"/>
+      <stop offset="100%" stop-color="#6366F1"/>
+    </linearGradient>
+    <linearGradient id="barActive" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#C084FC"/>
+      <stop offset="100%" stop-color="#6366F1"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0F172A" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="540" fill="url(#bg)"/>
+  <circle cx="180" cy="90" r="240" fill="#6366F1" opacity="0.15"/>
+  <circle cx="1020" cy="450" r="280" fill="#A855F7" opacity="0.15"/>
+
+  <!-- Top Header Banner Text -->
+  <g transform="translate(56, 46)">
+    <rect x="0" y="0" width="44" height="44" rx="12" fill="url(#brand)"/>
+    <path d="M13 15h18v-4H13zM10 18h24a3 3 0 0 1 3 3v9h-6v5H13v-5H7v-9a3 3 0 0 1 3-3zm6 9v5h12v-5z" fill="#FFF"/>
+    <text x="58" y="30" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="28" font-weight="800" fill="#FFFFFF">Print<tspan fill="#A78BFA">Flow</tspan></text>
+    <rect x="215" y="9" width="190" height="26" rx="13" fill="#1E293B" stroke="#334155"/>
+    <text x="310" y="26" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="600" fill="#C4B5FD">Full-Stack ERP &amp; Kanban</text>
+  </g>
+
+  <g transform="translate(650, 52)">
+    <rect x="0" y="0" width="94" height="28" rx="6" fill="#1E293B" stroke="#334155"/>
+    <text x="47" y="18" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" font-weight="700" fill="#38BDF8">React 19</text>
+    <rect x="104" y="0" width="110" height="28" rx="6" fill="#1E293B" stroke="#334155"/>
+    <text x="159" y="18" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" font-weight="700" fill="#4ADE80">Node.js + SQLite</text>
+    <rect x="224" y="0" width="115" height="28" rx="6" fill="#1E293B" stroke="#334155"/>
+    <text x="281" y="18" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" font-weight="700" fill="#F472B6">JWT + Zod API</text>
+    <rect x="349" y="0" width="136" height="28" rx="6" fill="#064E3B" stroke="#059669"/>
+    <text x="417" y="18" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" font-weight="700" fill="#6EE7B7">✓ 40 Automated Tests</text>
+  </g>
+
+  <!-- App Window Mockup -->
+  <g transform="translate(50, 110)" filter="url(#shadow)">
+    <!-- Window Frame -->
+    <rect width="1100" height="390" rx="16" fill="#F5F6FA" stroke="#334155" stroke-width="1.5"/>
+
+    <!-- Sidebar -->
+    <path d="M16 0 H195 V390 H16 A16 16 0 0 1 0 374 V16 A16 16 0 0 1 16 0 Z" fill="#0F172A"/>
+    <!-- Window dots -->
+    <circle cx="24" cy="22" r="5" fill="#EF4444"/>
+    <circle cx="40" cy="22" r="5" fill="#F59E0B"/>
+    <circle cx="56" cy="22" r="5" fill="#10B981"/>
+
+    <!-- Sidebar Logo -->
+    <rect x="20" y="48" width="26" height="26" rx="7" fill="url(#brand)"/>
+    <text x="54" y="66" font-family="Inter, sans-serif" font-size="15" font-weight="800" fill="#FFFFFF">Print<tspan fill="#A78BFA">Flow</tspan></text>
+
+    <!-- Nav items -->
+    <text x="22" y="104" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#64748B" letter-spacing="1">MENU</text>
+    <rect x="14" y="114" width="167" height="34" rx="8" fill="#312E81" opacity="0.65"/>
+    <rect x="14" y="114" width="3.5" height="34" rx="2" fill="#818CF8"/>
+    <text x="34" y="135" font-family="Inter, sans-serif" font-size="13" font-weight="600" fill="#FFFFFF">📊  Dashboard</text>
+
+    <text x="34" y="172" font-family="Inter, sans-serif" font-size="13" font-weight="500" fill="#CBD5E1">📋  Pedidos</text>
+    <text x="34" y="206" font-family="Inter, sans-serif" font-size="13" font-weight="500" fill="#CBD5E1">📌  Produção (Kanban)</text>
+    <text x="34" y="240" font-family="Inter, sans-serif" font-size="13" font-weight="500" fill="#CBD5E1">👥  Clientes</text>
+
+    <!-- User Footer -->
+    <line x1="16" y1="336" x2="180" y2="336" stroke="#1E293B"/>
+    <circle cx="34" cy="362" r="15" fill="url(#brand)"/>
+    <text x="34" y="366" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="700" fill="#FFF">UD</text>
+    <text x="56" y="359" font-family="Inter, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">Usuário Demo</text>
+    <text x="56" y="373" font-family="Inter, sans-serif" font-size="10" fill="#94A3B8">Administrador</text>
+
+    <!-- Main Content Area -->
+    <g transform="translate(215, 20)">
+      <!-- Header -->
+      <text x="0" y="22" font-family="Inter, sans-serif" font-size="20" font-weight="800" fill="#0F172A">Bom dia, Yudi 👋</text>
+      <text x="0" y="40" font-family="Inter, sans-serif" font-size="12" fill="#64748B">Visão geral da produção e do faturamento da gráfica em tempo real.</text>
+
+      <rect x="748" y="6" width="116" height="34" rx="8" fill="#4F46E5"/>
+      <text x="806" y="27" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF">+ Novo pedido</text>
+
+      <!-- KPI Cards Row -->
+      <g transform="translate(0, 56)">
+        <!-- Card 1 -->
+        <rect x="0" y="0" width="164" height="72" rx="10" fill="#FFFFFF" stroke="#E5E7EB"/>
+        <rect x="12" y="15" width="34" height="34" rx="8" fill="#EEF2FF"/>
+        <text x="29" y="37" text-anchor="middle" font-family="Inter, sans-serif" font-size="16">📋</text>
+        <text x="56" y="24" font-family="Inter, sans-serif" font-size="11" font-weight="500" fill="#64748B">Pedidos ativos</text>
+        <text x="56" y="46" font-family="Inter, sans-serif" font-size="20" font-weight="800" fill="#0F172A">15</text>
+        <text x="56" y="61" font-family="Inter, sans-serif" font-size="10" fill="#64748B">8 clientes ativos</text>
+
+        <!-- Card 2 -->
+        <rect x="175" y="0" width="164" height="72" rx="10" fill="#FFFFFF" stroke="#E5E7EB"/>
+        <rect x="187" y="15" width="34" height="34" rx="8" fill="#FFFBEB"/>
+        <text x="204" y="37" text-anchor="middle" font-family="Inter, sans-serif" font-size="16">⚙️</text>
+        <text x="231" y="24" font-family="Inter, sans-serif" font-size="11" font-weight="500" fill="#64748B">Em produção</text>
+        <text x="231" y="46" font-family="Inter, sans-serif" font-size="20" font-weight="800" fill="#0F172A">6</text>
+        <text x="231" y="61" font-family="Inter, sans-serif" font-size="10" fill="#D97706">Impressão + acab.</text>
+
+        <!-- Card 3 -->
+        <rect x="350" y="0" width="164" height="72" rx="10" fill="#FFFFFF" stroke="#E5E7EB"/>
+        <rect x="362" y="15" width="34" height="34" rx="8" fill="#ECFDF5"/>
+        <text x="379" y="37" text-anchor="middle" font-family="Inter, sans-serif" font-size="16">✅</text>
+        <text x="406" y="24" font-family="Inter, sans-serif" font-size="11" font-weight="500" fill="#64748B">Prontos entrega</text>
+        <text x="406" y="46" font-family="Inter, sans-serif" font-size="20" font-weight="800" fill="#059669">4</text>
+        <text x="406" y="61" font-family="Inter, sans-serif" font-size="10" fill="#10B981">Aguardando retirada</text>
+
+        <!-- Card 4 -->
+        <rect x="525" y="0" width="164" height="72" rx="10" fill="#FFFFFF" stroke="#E5E7EB"/>
+        <rect x="537" y="15" width="34" height="34" rx="8" fill="#FFF1F2"/>
+        <text x="554" y="37" text-anchor="middle" font-family="Inter, sans-serif" font-size="16">⚠️</text>
+        <text x="581" y="24" font-family="Inter, sans-serif" font-size="11" font-weight="500" fill="#64748B">Prazo urgente</text>
+        <text x="581" y="46" font-family="Inter, sans-serif" font-size="20" font-weight="800" fill="#E11D48">1</text>
+        <text x="581" y="61" font-family="Inter, sans-serif" font-size="10" fill="#E11D48">Prioridade máxima</text>
+
+        <!-- Card 5 -->
+        <rect x="700" y="0" width="164" height="72" rx="10" fill="#FFFFFF" stroke="#E5E7EB"/>
+        <rect x="712" y="15" width="34" height="34" rx="8" fill="#F5F3FF"/>
+        <text x="729" y="37" text-anchor="middle" font-family="Inter, sans-serif" font-size="16">💰</text>
+        <text x="756" y="24" font-family="Inter, sans-serif" font-size="11" font-weight="500" fill="#64748B">Faturamento</text>
+        <text x="756" y="45" font-family="Inter, sans-serif" font-size="16" font-weight="800" fill="#0F172A">R$ 16.490</text>
+        <text x="756" y="61" font-family="Inter, sans-serif" font-size="10" fill="#7C3AED">+R$ 7.530 orçados</text>
+      </g>
+
+      <!-- Bottom Split: Left Revenue Chart + Right Interactive Kanban Preview -->
+      <g transform="translate(0, 140)">
+        <!-- Revenue Chart Card -->
+        <rect x="0" y="0" width="300" height="212" rx="10" fill="#FFFFFF" stroke="#E5E7EB"/>
+        <text x="16" y="24" font-family="Inter, sans-serif" font-size="13" font-weight="700" fill="#0F172A">Faturamento — 6 meses</text>
+        <text x="284" y="24" text-anchor="end" font-family="Inter, sans-serif" font-size="10" fill="#64748B">Aprovados</text>
+
+        <!-- Bars -->
+        <g transform="translate(20, 46)">
+          <!-- Jun -->
+          <rect x="0" y="75" width="30" height="60" rx="5" fill="url(#bar1)"/>
+          <text x="15" y="150" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#64748B">Jun</text>
+          <!-- Jul -->
+          <rect x="46" y="55" width="30" height="80" rx="5" fill="url(#bar1)"/>
+          <text x="61" y="150" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#64748B">Jul</text>
+          <!-- Ago -->
+          <rect x="92" y="65" width="30" height="70" rx="5" fill="url(#bar1)"/>
+          <text x="107" y="150" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#64748B">Ago</text>
+          <!-- Set -->
+          <rect x="138" y="38" width="30" height="97" rx="5" fill="url(#bar1)"/>
+          <text x="153" y="150" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#64748B">Set</text>
+          <!-- Out -->
+          <rect x="184" y="28" width="30" height="107" rx="5" fill="url(#bar1)"/>
+          <text x="199" y="150" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#64748B">Out</text>
+          <!-- Nov -->
+          <rect x="230" y="8" width="30" height="127" rx="5" fill="url(#barActive)"/>
+          <text x="245" y="150" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#4F46E5">Nov</text>
+        </g>
+
+        <!-- Kanban Mini Board Card -->
+        <rect x="312" y="0" width="552" height="212" rx="10" fill="#EEF0F5" stroke="#E5E7EB"/>
+
+        <!-- Col 1: Aprovado -->
+        <g transform="translate(322, 10)">
+          <circle cx="8" cy="10" r="4" fill="#3B82F6"/>
+          <text x="18" y="14" font-family="Inter, sans-serif" font-size="11" font-weight="700" fill="#0F172A">Aprovado</text>
+          <rect x="148" y="2" width="20" height="16" rx="8" fill="#FFFFFF"/>
+          <text x="158" y="13" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#334155">3</text>
+
+          <g transform="translate(0, 26)" filter="url(#cardShadow)">
+            <rect width="170" height="76" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+            <rect width="3.5" height="76" rx="2" fill="#E11D48"/>
+            <rect x="10" y="8" width="52" height="15" rx="4" fill="#EEF2FF"/>
+            <text x="36" y="19" text-anchor="middle" font-family="monospace" font-size="9.5" font-weight="700" fill="#4F46E5">PF-00013</text>
+            <rect x="114" y="8" width="46" height="15" rx="4" fill="#FFE4E6"/>
+            <text x="137" y="18" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" font-weight="700" fill="#BE123C">URGENTE</text>
+            <text x="10" y="38" font-family="Inter, sans-serif" font-size="11" font-weight="700" fill="#0F172A">Agendas escolares 2027</text>
+            <text x="10" y="51" font-family="Inter, sans-serif" font-size="9.5" fill="#64748B">Escola Pequeno Saber</text>
+            <text x="10" y="67" font-family="Inter, sans-serif" font-size="9.5" font-weight="600" fill="#64748B">📅 Em 10 dias</text>
+            <text x="160" y="67" text-anchor="end" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#0F172A">R$ 8.400</text>
+          </g>
+
+          <g transform="translate(0, 110)" filter="url(#cardShadow)">
+            <rect width="170" height="76" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+            <rect width="3.5" height="76" rx="2" fill="#F97316"/>
+            <rect x="10" y="8" width="52" height="15" rx="4" fill="#EEF2FF"/>
+            <text x="36" y="19" text-anchor="middle" font-family="monospace" font-size="9.5" font-weight="700" fill="#4F46E5">PF-00007</text>
+            <rect x="124" y="8" width="36" height="15" rx="4" fill="#FFEDD5"/>
+            <text x="142" y="18" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" font-weight="700" fill="#C2410C">ALTA</text>
+            <text x="10" y="38" font-family="Inter, sans-serif" font-size="11" font-weight="700" fill="#0F172A">Adesivos de parede</text>
+            <text x="10" y="51" font-family="Inter, sans-serif" font-size="9.5" fill="#64748B">Academia Movimento</text>
+            <text x="10" y="67" font-family="Inter, sans-serif" font-size="9.5" font-weight="600" fill="#64748B">📅 Em 4 dias</text>
+            <text x="160" y="67" text-anchor="end" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#0F172A">R$ 1.140</text>
+          </g>
+        </g>
+
+        <!-- Col 2: Em produção -->
+        <g transform="translate(503, 10)">
+          <circle cx="8" cy="10" r="4" fill="#F59E0B"/>
+          <text x="18" y="14" font-family="Inter, sans-serif" font-size="11" font-weight="700" fill="#0F172A">Em produção</text>
+          <rect x="148" y="2" width="20" height="16" rx="8" fill="#FFFFFF"/>
+          <text x="158" y="13" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#334155">4</text>
+
+          <g transform="translate(0, 26)" filter="url(#cardShadow)">
+            <rect width="170" height="76" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+            <rect width="3.5" height="76" rx="2" fill="#E11D48"/>
+            <rect x="10" y="8" width="52" height="15" rx="4" fill="#EEF2FF"/>
+            <text x="36" y="19" text-anchor="middle" font-family="monospace" font-size="9.5" font-weight="700" fill="#4F46E5">PF-00015</text>
+            <rect x="114" y="8" width="46" height="15" rx="4" fill="#FFE4E6"/>
+            <text x="137" y="18" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" font-weight="700" fill="#BE123C">URGENTE</text>
+            <text x="10" y="38" font-family="Inter, sans-serif" font-size="11" font-weight="700" fill="#0F172A">Rótulos cerveja IPA</text>
+            <text x="10" y="51" font-family="Inter, sans-serif" font-size="9.5" fill="#64748B">Cervejaria Lúpulo Bravo</text>
+            <text x="10" y="67" font-family="Inter, sans-serif" font-size="9.5" font-weight="600" fill="#D97706">📅 Em 3 dias</text>
+            <text x="160" y="67" text-anchor="end" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#0F172A">R$ 1.400</text>
+          </g>
+
+          <!-- Drag placeholder -->
+          <rect x="0" y="110" width="170" height="76" rx="8" fill="#FEF3C7" fill-opacity="0.45" stroke="#F59E0B" stroke-width="1.5" stroke-dasharray="5,4"/>
+          <text x="85" y="152" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#D97706">Soltar card aqui</text>
+        </g>
+
+        <!-- Col 3: Pronto -->
+        <g transform="translate(684, 10)">
+          <circle cx="8" cy="10" r="4" fill="#10B981"/>
+          <text x="18" y="14" font-family="Inter, sans-serif" font-size="11" font-weight="700" fill="#0F172A">Pronto</text>
+          <rect x="148" y="2" width="20" height="16" rx="8" fill="#FFFFFF"/>
+          <text x="158" y="13" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#334155">2</text>
+
+          <g transform="translate(0, 26)" filter="url(#cardShadow)">
+            <rect width="170" height="76" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+            <rect width="3.5" height="76" rx="2" fill="#38BDF8"/>
+            <rect x="10" y="8" width="52" height="15" rx="4" fill="#EEF2FF"/>
+            <text x="36" y="19" text-anchor="middle" font-family="monospace" font-size="9.5" font-weight="700" fill="#4F46E5">PF-00005</text>
+            <rect x="120" y="8" width="40" height="15" rx="4" fill="#E0F2FE"/>
+            <text x="140" y="18" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" font-weight="700" fill="#0369A1">MÉDIA</text>
+            <text x="10" y="38" font-family="Inter, sans-serif" font-size="11" font-weight="700" fill="#0F172A">Flyers promoção verão</text>
+            <text x="10" y="51" font-family="Inter, sans-serif" font-size="9.5" fill="#64748B">Studio Bella Estética</text>
+            <text x="10" y="67" font-family="Inter, sans-serif" font-size="9.5" font-weight="600" fill="#059669">✓ Pronto hoje</text>
+            <text x="160" y="67" text-anchor="end" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#0F172A">R$ 550</text>
+          </g>
+
+          <g transform="translate(0, 110)" filter="url(#cardShadow)">
+            <rect width="170" height="76" rx="8" fill="#FFFFFF" stroke="#E5E7EB"/>
+            <rect width="3.5" height="76" rx="2" fill="#38BDF8"/>
+            <rect x="10" y="8" width="52" height="15" rx="4" fill="#EEF2FF"/>
+            <text x="36" y="19" text-anchor="middle" font-family="monospace" font-size="9.5" font-weight="700" fill="#4F46E5">PF-00014</text>
+            <rect x="120" y="8" width="40" height="15" rx="4" fill="#E0F2FE"/>
+            <text x="140" y="18" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" font-weight="700" fill="#0369A1">MÉDIA</text>
+            <text x="10" y="38" font-family="Inter, sans-serif" font-size="11" font-weight="700" fill="#0F172A">Convites formatura</text>
+            <text x="10" y="51" font-family="Inter, sans-serif" font-size="9.5" fill="#64748B">Escola Pequeno Saber</text>
+            <text x="10" y="67" font-family="Inter, sans-serif" font-size="9.5" font-weight="600" fill="#059669">✓ Amanhã</text>
+            <text x="160" y="67" text-anchor="end" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#0F172A">R$ 540</text>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
